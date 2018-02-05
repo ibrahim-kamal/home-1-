@@ -1,0 +1,57 @@
+$(document).ready(function()
+{
+	$('.Sport').click(function(){
+	$('.Sport').css({color:'#00F'});
+	$('.Freezers').css({color:'#AB7'});
+	$('.washer').css({color:'#AB7'});
+	$('.Sport2').show();
+	$('.Freezers2').hide();
+	$('.washer2').hide();
+});
+	$('.Freezers').click(function(){
+	$('.Freezers').css({color:'#00F'});
+	$('.Sport').css({color:'#AB7'});
+	$('.washer').css({color:'#AB7'});
+	$('.Freezers2').show();
+	$('.Sport2').hide();
+	$('.washer2').hide();
+});
+	$('.washer').click(function(){
+	$('.washer').css({color:'#00F'});
+	$('.Sport').css({color:'#AB7'});
+	$('.Freezers').css({color:'#AB7'});
+	$('.washer2').show();
+	$('.Sport2').hide();
+	$('.Freezers2').hide();
+});
+			/*
+			devices
+			electronic
+			Home
+			Home-device
+			electronic-device
+			*/
+		$('.devices').click(function(){
+		$('.Home').css({color:'#AB7'});
+		$('.devices').css({color:'#00F'});
+		$('.electronic').css({color:'#AB7'});
+		$('.electronic-device').show();
+		$('.Home-device').show();
+	});
+	
+	$('.electronic').click(function(){
+		$('.Home').css({color:'#AB7'});
+		$('.devices').css({color:'#AB7'});
+		$('.electronic').css({color:'#00F'});
+		$('.electronic-device').show();
+		$('.Home-device').hide();
+	});
+	
+		$('.Home').click(function(){
+		$('.Home').css({color:'#00F'});
+		$('.devices').css({color:'#AB7'});
+		$('.electronic').css({color:'#AB7'});
+		$('.electronic-device').hide();
+		$('.Home-device').show();
+	});
+});
